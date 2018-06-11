@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">dsc-trainning 2</string>
+    <string name="nama_kota">Nama Kota</string>
+    <string name="suhu">15</string>
+    <string name="last_search">Last Search</string>
+    <string name="activity">Can we see a movie today?</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="weadify">WEADIFY</string>
+</resources>

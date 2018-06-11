@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/grey"
+            app:popupTheme="@style/ActionBarPopupThemeOverlay"
+            android:elevation="0dp"
+            android:theme="@style/ActionBarThemeOverlay">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="@string/weadify"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                app:fontFamily="@font/century_gothic_regular"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ic_rainy" />
+
+            <LinearLayout
+                android:layout_below="@+id/iv_icon"
+                android:id="@+id/linear_layout_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_nama_kota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Barcelona"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        app:fontFamily="@font/century_gothic_regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/text_negara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spain"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        app:fontFamily="@font/century_gothic_regular"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suhu"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="70sp"
+                    app:fontFamily="@font/century_gothic_regular"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <TextView
+                android:layout_below="@+id/linear_layout_text1"
+                android:id="@+id/text_greet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Sam"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                app:fontFamily="@font/century_gothic_regular"/>
+            <TextView
+                android:layout_below="@+id/text_greet"
+                android:id="@+id/text_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="60dp"
+                app:fontFamily="@font/century_gothic_regular"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/last_search"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
